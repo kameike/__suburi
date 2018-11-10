@@ -1,0 +1,33 @@
+PODS:
+  - DataSourceKit (0.1.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
+
+DEPENDENCIES:
+  - DataSourceKit
+  - R.swift
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DataSourceKit
+    - R.swift
+    - R.swift.Library
+    - RxCocoa
+    - RxSwift
+
+SPEC CHECKSUMS:
+  DataSourceKit: 4f227c4361a0ca10bcba15624b9734af32e3cb1a
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+
+PODFILE CHECKSUM: d746bf6fcb1e5a05af40fdc3eed97424be2614e7
+
+COCOAPODS: 1.5.3

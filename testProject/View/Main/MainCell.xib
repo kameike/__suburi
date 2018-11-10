@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="191" id="JAY-gw-aGs" customClass="MainCell" customModule="testProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JAY-gw-aGs" id="50y-py-viW">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="190.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8B-qp-XgZ" customClass="TagBase" customModule="testProject" customModuleProvider="target">
+                        <rect key="frame" x="16" y="11" width="57.5" height="29"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="label"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_indexedStyle">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ダミーのフォームを編集する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ia3-J4-r5C">
+                        <rect key="frame" x="16" y="52" width="226" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x8B-qp-XgZ" firstAttribute="top" secondItem="50y-py-viW" secondAttribute="topMargin" id="DVs-rf-G19"/>
+                    <constraint firstItem="x8B-qp-XgZ" firstAttribute="leading" secondItem="50y-py-viW" secondAttribute="leadingMargin" id="oSd-wB-VxZ"/>
+                    <constraint firstItem="Ia3-J4-r5C" firstAttribute="top" secondItem="x8B-qp-XgZ" secondAttribute="bottom" constant="12" id="qhD-UL-pOV"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Ia3-J4-r5C" secondAttribute="bottom" constant="12" id="t5A-BF-xko"/>
+                    <constraint firstItem="Ia3-J4-r5C" firstAttribute="leading" secondItem="50y-py-viW" secondAttribute="leadingMargin" id="x50-et-rBK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tab" destination="x8B-qp-XgZ" id="grF-XZ-8nP"/>
+            </connections>
+            <point key="canvasLocation" x="46.5" y="-46.5"/>
+        </tableViewCell>
+    </objects>
+</document>

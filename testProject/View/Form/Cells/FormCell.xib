@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="248" id="KBb-mw-mqG" customClass="FormCell" customModule="testProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KBb-mw-mqG" id="xUY-OF-f1U">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="247.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vy-Q2-Qsy" customClass="SelectorHeaderView" customModule="testProject" customModuleProvider="target">
+                        <rect key="frame" x="16" y="11" width="343" height="98"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="1" constant="98" id="rNy-Ue-4Nu"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZJ-70-dQK" customClass="SelectorContainerView" customModule="testProject" customModuleProvider="target">
+                        <rect key="frame" x="16" y="109" width="343" height="128"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="1" constant="128" id="KX7-zD-AEK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="6vy-Q2-Qsy" secondAttribute="trailing" id="3NZ-yE-t9f"/>
+                    <constraint firstItem="6vy-Q2-Qsy" firstAttribute="top" secondItem="xUY-OF-f1U" secondAttribute="topMargin" id="Dnf-J5-2JR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iZJ-70-dQK" secondAttribute="bottom" id="VVp-cy-jsL"/>
+                    <constraint firstItem="iZJ-70-dQK" firstAttribute="top" secondItem="6vy-Q2-Qsy" secondAttribute="bottom" id="fYe-U4-cpY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iZJ-70-dQK" secondAttribute="trailing" id="g7U-yb-4yC"/>
+                    <constraint firstItem="6vy-Q2-Qsy" firstAttribute="leading" secondItem="xUY-OF-f1U" secondAttribute="leadingMargin" id="qem-0y-ggN"/>
+                    <constraint firstItem="iZJ-70-dQK" firstAttribute="leading" secondItem="xUY-OF-f1U" secondAttribute="leadingMargin" id="rvb-Gi-6uG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerView" destination="6vy-Q2-Qsy" id="44F-u9-a8O"/>
+                <outlet property="payloadContainer" destination="iZJ-70-dQK" id="tn3-wq-gbw"/>
+            </connections>
+            <point key="canvasLocation" x="-26.5" y="-438"/>
+        </tableViewCell>
+    </objects>
+</document>
